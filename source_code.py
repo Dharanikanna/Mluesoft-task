@@ -6,7 +6,7 @@ import sqlite3  # Interfacing database using sqlite library
 
 def db_connection():
     #"Connecting database"
-    connect=sqlite3.connect("movie.db")
+    connect=sqlite3.connect("movie.db",isolation_level=None)
     return connect
 
 db=db_connection()
